@@ -26,40 +26,52 @@
 </nav>
 <section style="margin-bottom: 50px;">
 	<div class="container">
-		<form role="form">
+		<form role="form" method="POST">
 			<div class="form-group">
-				<label class="control-label" for="email">Email address</label>
-				<input type="email" class="form-control" id="email" name="email" placeholder="Enter your email address">
+				<label class="control-label" for="email">Email address *</label>
+				<input type="email" required class="form-control" id="email" name="email" placeholder="Enter your email address">
+				<span id="email-tooltip" style="display: none;" >Email is not valid.</span>
 			</div>
 			<div class="form-group">
-				<label for="username">Username</label>
+				<label for="username">Username *</label>
 				<input type="text" class="form-control" id="username" name="username" placeholder="Enter your username">
+				<span id="username-tooltip" style="display: none;" >Username is not valid or existed.</span>
 			</div>
 			<div class="form-group">
-				<label for="password">Password</label>
+				<label for="password">Password *</label>
 				<input type="password" class="form-control" id="password" name="password" placeholder="Enter your password">
+				<span id="password-tooltip" style="display: none;" >Password is not valid.</span>
+			</div>
+			<div class="form-group">
+				<label for="confirm-password">Confirm password *</label>
+				<input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Retype your password">
+				<span id="confirm-password-tooltip" style="display: none;" >Password does not matches.</span>
 			</div>
 			<div class="form-group">
 				<label for="first-name">First Name</label>
 				<input type="text" class="form-control" id="first-name" name="first-name" placeholder="Your first name">
+				<span id="first-name-tooltip" style="display: none;" >First name is not valid</span>
 			</div>
 			<div class="form-group">
 				<label for="last-name">Last Name</label>
 				<input type="text" class="form-control" id="last-name" name="last-name" placeholder="Your last name">
+				<span id="last-name-tooltip" style="display: none;" >Last name is not valid</span>
 			</div>
 			<div class="form-group">
 				<label for="birthday">Birthday</label>
 				<input type="datetime" class="form-control" id="birthday" name="birthday" placeholder="Your birthday">
+				<span id="birthday-tooltip" style="display: none;" >Birthday is not valid</span>
 			</div>
 			<div class="form-group">
 				<label class="control-label" for="gender">Gender:</label>
 				<label class="radio-inline">
-				<input type="radio" name="gender" id="male" value="Male" checked>
+				<input type="radio" name="gender" id="male" value="Male">
 				Male
 				</label>
 				<label class="radio-inline">
 				<input type="radio" name="gender" id="female" value="Female">
 				Female
+				<span id="gender-tooltip" style="display: none;" >Gender is not valid</span>
 				</label>
 			</div>				
 			<div class="checkbox">
@@ -73,8 +85,9 @@
 </section>
 <footer>
 	<div class="footer">
-	Copyright &copy; 2014 by <a href="mailto:ansidev@gmail.com">ansidev</a>
+	Copyright &copy; 2014 by <a href="https://github.com/Maya-Team" target="_blank">Maya Team</a>
 	</div>
 </footer>
+<script src="bootstrap/js/register.js"></script>    
 </body>
 </html>
