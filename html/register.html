@@ -3,15 +3,18 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css" media="all">
-	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-flat.css" media="all">
-	<link rel="stylesheet" type="text/css" href="./bootstrap/css/maya-notes.css" media="all">
-	<!-- <link rel="stylesheet" type="text/css" href="./bootstrap/css/reset.css" media="all"> -->
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" media="all">
+	<!-- <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" media="all"> -->
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-flat.css" media="all">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/maya-notes.css" media="all">
+	<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
+	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet"> -->
+	<!-- <link rel="stylesheet" type="text/css" href="../bootstrap/css/reset.css" media="all"> -->
 	<title>Maya Notes Web Apps</title>
 </head>
 <body>
 <header>
-	<h1 class="text-uppercase page-name" tabindex="0">Register</h1>
+	<h1 class="text-uppercase page-name">Register</h1>
 </header>
 <nav>
 <!-- 
@@ -27,9 +30,10 @@
 <section style="margin-bottom: 50px;">
 	<div class="container">
 		<form role="form" method="POST">
-			<div class="form-group">
+			<div class="form-group has-feedback has-success">
 				<label class="control-label" for="email">Email address *</label>
 				<input type="email" required class="form-control" id="email" name="email" placeholder="Enter your email address" tabindex="1">
+				<span class="glyphicon glyphicon-ok form-control-feedback"></span>
 				<span id="email-tooltip" style="display: none;" >Email is not valid.</span>
 			</div>
 			<div class="form-group">
@@ -92,6 +96,6 @@
 <!--[if lt IE 8]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
 <![endif]-->
-<script src="bootstrap/js/register.js"></script>    
+<script src="../bootstrap/js/register.js"></script>    
 </body>
 </html>
