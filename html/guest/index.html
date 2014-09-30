@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.css" media="all">
+    <!-- <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css" media="all"> -->
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap-flat.css" media="all">
+    <link rel="stylesheet" type="text/css" href="../bootstrap/css/maya-notes.css" media="all">
+    <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
+    <!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet"> -->
+    <!-- <link rel="stylesheet" type="text/css" href="../bootstrap/css/reset.css" media="all"> -->
+    <title>Maya Notes Web App - Login</title>
+</head>
+
+<body>
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <h1>#col-md-8</h1>
+            </div>
+            <div class="col-md-4 sidebar">
+                <h1 class="text-uppercase">Maya Notes Web App</h1>
+                <form class="maya-form" role="form" method="POST">
+                <div class="row">
+                    <div class="col-md-8 text-left">
+                        <p class="text-left">Login</p>
+                    </div>
+                    <div class="col-md-4 text-right">
+                        <p class="text-right">or <a href="#">Register</a></p>
+                    </div>
+                </div>
+                    <div class="form-group has-feedback has-success">
+                            <label class="control-label" for="email">Email address *</label>
+                            <input type="email" required class="form-control" id="email" name="email" placeholder="Enter your email address" tabindex="1">
+                            <span class="glyphicon glyphicon-ok form-control-feedback"></span>
+                            <span id="email-tooltip" style="display: none;" >Email is not valid.</span>
+                    </div>
+                    <div class="form-group">
+                            <label for="username">Username *</label>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" tabindex="2">
+                            <span id="username-tooltip" style="display: none;" >Username is not valid or existed.</span>
+                    </div>
+                    <div class="form-group">
+                            <label for="password">Password *</label>
+                            <input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" tabindex="3">
+                            <span id="password-tooltip" style="display: none;" >Password is not valid.</span>
+                    </div>
+                    <div class="form-group">
+                            <label for="confirm-password">Confirm password *</label>
+                            <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Retype your password" tabindex="4">
+                            <span id="confirm-password-tooltip" style="display: none;" >Password does not matches.</span>
+                    </div>
+                    <div class="checkbox">
+                            <label>
+                                    <input type="checkbox" name="tos-checkbox" id="tos-checkbox" tabindex="10">I have read this agreement and agree to the Term and Condition of Use.
+                            <span class="clearfix" id="tos-checkbox-tooltip" style="display: none;" >You must check this checkbox.</span>
+                            </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary" tabindex="11">Register</button>
+		</form>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+<footer>
+	<div class="footer">
+	Copyright &copy; 2014 by <a href="https://github.com/Maya-Team" target="_blank">Maya Team</a>
+	</div>
+</footer>
+<!--[if lt IE 8]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+<![endif]-->
+<script src="../bootstrap/js/register.js"></script>
+</html>
