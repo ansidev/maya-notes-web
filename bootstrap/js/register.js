@@ -1,5 +1,5 @@
 window.onload = function() {
-    document.getElementById('email').onfocus = show('email-tooltip');
+    $('#email').onfocus = show('email-tooltip');
     document.getElementById('email').onblur = hide('email-tooltip');
 
     document.getElementById('username').onfocus = show('username-tooltip');
@@ -26,18 +26,28 @@ window.onload = function() {
     document.getElementById('female').onfocus = show('gender-tooltip');
     document.getElementById('female').onblur = hide('gender-tooltip');
 
-    document.getElementById('tos-checkbox').onfocus = show('tos-checkbox-tooltip');
-    document.getElementById('tos-checkbox').onblur = hide('tos-checkbox-tooltip');
+    document.getElementById('tos-checkbox').onfocus = isChecked('tos-checkbox-tooltip');
+    document.getElementById('tos-checkbox').onblur = isChecked('tos-checkbox-tooltip');
 }
 
 function show(element) {
 	return function() {
-    	document.getElementById(element).style.display = "inline";
+    	$('#'+element).css('display','inline');
 	}
 }
 
+function isChecked(element) {
+    return function() {
+        if ($('#'+element).checked === false) {
+            show(element);
+        }
+        else {
+            hide(element);
+        }
+    }
+}
 function hide(element) {
 	return function() {
-    	document.getElementById(element).style.display = "none";
+        $('#'+element).css('display','none');
     }
 }

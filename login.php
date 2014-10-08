@@ -36,7 +36,7 @@
 </nav>
 <section style="margin-bottom: 50px;">
 	<div class="container">
-		<form role="form" method="POST">
+		<form role="form" method="POST" onsubmit="validateForm()">
 			<div class="form-group">
 				<label for="username">Username*</label>
 				<input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" tabindex="2">
@@ -53,7 +53,7 @@
 		    if(isset($_POST['username']) && isset($_POST['password']))
 		    {
 		    	$escapedName = mysql_real_escape_string($_POST['username']);
-				$escapedPW = mysql_real_escape_string($_POST['password']);
+				$escapedPW = mysql_real_escape_string($_POST['password-tooltip']);
 		    	$user_query = "SELECT * FROM `lang` WHERE `lang_string` = 'LOGIN_TITLE'";
 		    }
 		?>

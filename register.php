@@ -1,7 +1,7 @@
 <?php
-include 'app-config.php';
-$page_title = "Register";
-
+	include 'config/app-config.php';
+	include 'inc/function.php';
+	$page_title = "Register";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -15,11 +15,11 @@ $page_title = "Register";
 	<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet"> -->
 	<!-- <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet"> -->
 	<!-- <link rel="stylesheet" type="text/css" href="./bootstrap/css/reset.css" media="all"> -->
-	<title><?php echo $app_name;?> - <?php echo $page_title;?></title>
+	<title><?=APP_NAME?> - <?=$page_title?></title>
 </head>
 <body>
 <header>
-	<h1 class="text-uppercase page-name"><?php echo $page_title;?></h1>
+	<h1 class="text-uppercase page-name"><?=$page_title?></h1>
 </header>
 <nav>
 <!-- 
@@ -35,42 +35,13 @@ $page_title = "Register";
 <section style="margin-bottom: 50px;">
 	<div class="container">
 		<form role="form" method="POST">
-			<div class="form-group has-feedback has-success">
-				<label class="control-label" for="email">Email address *</label>
-				<input type="email" required class="form-control" id="email" name="email" placeholder="Enter your email address" tabindex="1">
-				<span class="glyphicon glyphicon-ok form-control-feedback"></span>
-				<span id="email-tooltip" style="display: none;" >Email is not valid.</span>
-			</div>
-			<div class="form-group">
-				<label for="username">Username *</label>
-				<input type="text" class="form-control" id="username" name="username" placeholder="Enter your username" tabindex="2">
-				<span id="username-tooltip" style="display: none;" >Username is not valid or existed.</span>
-			</div>
-			<div class="form-group">
-				<label for="password">Password *</label>
-				<input type="password" class="form-control" id="password" name="password" placeholder="Enter your password" tabindex="3">
-				<span id="password-tooltip" style="display: none;" >Password is not valid.</span>
-			</div>
-			<div class="form-group">
-				<label for="confirm-password">Confirm password *</label>
-				<input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="Retype your password" tabindex="4">
-				<span id="confirm-password-tooltip" style="display: none;" >Password does not matches.</span>
-			</div>
-			<div class="form-group">
-				<label for="first-name">First Name</label>
-				<input type="text" class="form-control" id="first-name" name="first-name" placeholder="Your first name" tabindex="5">
-				<span id="first-name-tooltip" style="display: none;" >First name is not valid</span>
-			</div>
-			<div class="form-group">
-				<label for="last-name">Last Name</label>
-				<input type="text" class="form-control" id="last-name" name="last-name" placeholder="Your last name" tabindex="6">
-				<span id="last-name-tooltip" style="display: none;" >Last name is not valid</span>
-			</div>
-			<div class="form-group">
-				<label for="birthday">Birthday</label>
-				<input type="datetime" class="form-control" id="birthday" name="birthday" placeholder="Your birthday" tabindex="7">
-				<span id="birthday-tooltip" style="display: none;" >Birthday is not valid</span>
-			</div>
+			<?php init_general_input("email", "Email address *", "email", "email", "Enter your email address", "1");?>
+			<?php init_general_input("username", "Username *", "text", "", "Enter your username", "2");?>
+			<?php init_general_input("password", "Password *", "password", "", "Enter your password", "3");?>
+			<?php init_general_input("confirm-password", "Confirm password *", "password", "", "Retype your password", "4");?>
+			<?php init_general_input("first-name", "First name", "text", "", "Your first name", "5");?>
+			<?php init_general_input("last-name", "Last name", "text", "", "Your last name", "6");?>
+			<?php init_general_input("birthday", "Birthday", "datetime", "", "Your birthday", "7");?>
 			<div class="form-group">
 				<label class="control-label" for="gender">Gender:</label>
 				<label class="radio-inline">
@@ -81,7 +52,7 @@ $page_title = "Register";
 				<input type="radio" name="gender" id="female" value="Female" tabindex="9">
 				Female
 				</label>
-				<span class="clearfix" id="gender-tooltip" style="display: none;">Gender is not valid</span>
+<!--				<span class="clearfix" id="gender-tooltip" style="display: none;">Gender is not valid</span>-->
 			</div>				
 			<div class="checkbox">
 				<label>
