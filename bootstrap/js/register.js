@@ -51,3 +51,57 @@ function hide(element) {
         $('#'+element).css('display','none');
     }
 }
+
+<script src="./bootstrap/js/jquery.validate.js"></script>
+<script src="./bootstrap/js/jquery-validate.bootstrap-tooltip.js"></script>
+    <script>
+    $(document).ready(function () {
+        $(#signUpPopup
+        ).
+        validate({
+        rules: {
+        "email": {
+        required: true,
+        email: true
+        },
+        "username": "required",
+        "password": {
+        required: true,
+        minlength: 8
+        },
+        "confirmPassword": {
+        required: true,
+        minlength: 8
+        },
+        "tosCheckbox": "required"
+        }
+
+        message: {
+        "email": "Please enter a valid email",
+        "username": "Please enter your username",
+        "password": {
+        required: "Please provide a password",
+        minlength: "Your password must be at least 8 characters long"
+        },
+        "confirmPassword": {
+        required: "Please re-enter your password to confirm",
+        minlength: "Your confirm password must same as your password"
+        },
+        "tosCheckbox": "Please accept out Term of Service"
+        },
+        tooltip_options: {
+        email: {trigger:'focus'},
+        username: {trigger: 'focus'},
+        password: {trigger: 'focus'},
+        confirmPassword: {trigger: 'focus'},
+        tosCheckbox: {placement: 'right'}
+        }
+        submitHandler: function(form) {
+        $("#validity_label").html('<div class="alert alert-success">No errors.</div>');
+        },
+        invalidHandler: function(form, validator) {
+        $("#validity_label").html('<div class="alert alert-error">There be '+validator.numberOfInvalids()+' error'+(validator.numberOfInvalids()>1?'s':'')+' here!</div>');
+        }
+        })
+        })
+    </script>

@@ -1,5 +1,5 @@
 <?php
-	include 'config/app-config.php';
+	include 'config/site-config.php';
 	try {
 		// Connect to database using PDO
 		$conn = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME, DB_USER, DB_PASS, $DB_ENCODING);
