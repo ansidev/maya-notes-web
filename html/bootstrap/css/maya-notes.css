@@ -20,6 +20,8 @@ header,
 .maya-menu {
     margin: 20px;
 }
+<<<<<<< HEAD
+=======
 
 <<<<<<< HEAD
 =======
@@ -36,13 +38,34 @@ header,
 }
 
 >>>>>>> 681239fe67d60ccc35871b64ae9f9107f2546f45
+>>>>>>> master
 /*Auto expand dropdown menu when mouse hover*/
-.dropdown:hover .dropdown-menu{
-    display: block;    
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
- 
 /* if you want to hide the arrow */
-a.menu:after, .dropdown-toggle:after {
+
+a.menu:after,
+.dropdown-toggle:after {
     content: none;
 }
 /* -- End -- */
+
+.site-logo {
+    width: 166px;
+}
+.navbar {
+    margin-bottom: 0;
+}
+.panel-heading {
+    overflow: hidden;
+}
+.panel-title {
+    padding-top: 7px;
+}
+/*
+.btn-group {
+    position: relative;
+    top: -5px;
+}*/
