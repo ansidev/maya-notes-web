@@ -20,6 +20,25 @@ header,
 .maya-menu {
     margin: 20px;
 }
+<<<<<<< HEAD
+=======
+
+<<<<<<< HEAD
+=======
+.sidebar {
+    top: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86,61,124,.2);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+>>>>>>> 681239fe67d60ccc35871b64ae9f9107f2546f45
+>>>>>>> master
 /*Auto expand dropdown menu when mouse hover*/
 
 .dropdown:hover .dropdown-menu {
