@@ -20,14 +20,22 @@ header,
 .maya-menu {
     margin: 20px;
 }
-
 /*Auto expand dropdown menu when mouse hover*/
-.dropdown:hover .dropdown-menu{
-    display: block;    
+
+.dropdown:hover .dropdown-menu {
+    display: block;
 }
- 
 /* if you want to hide the arrow */
-a.menu:after, .dropdown-toggle:after {
+
+a.menu:after,
+.dropdown-toggle:after {
     content: none;
 }
 /* -- End -- */
+
+.site-logo {
+    width: 166px;
+}
+.navbar {
+    margin-bottom: 0;
+}
