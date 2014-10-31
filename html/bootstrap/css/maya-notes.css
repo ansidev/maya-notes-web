@@ -39,3 +39,14 @@ a.menu:after,
 .navbar {
     margin-bottom: 0;
 }
+.panel-heading {
+    overflow: hidden;
+}
+.panel-title {
+    padding-top: 7px;
+}
+/*
+.btn-group {
+    position: relative;
+    top: -5px;
+}*/

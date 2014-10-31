@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css" media="all">
-    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-flat.css" media="all">
+    <!--    <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-flat.css" media="all">-->
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/maya-notes.css" media="all">
     <!-- // <script src="../bootstrap/js/jquery.js"></script> -->
     <!-- <link rel="stylesheet" type="text/css" href="../bootstrap/css/reset.css" media="all"> -->
@@ -18,7 +18,7 @@
 
 <body>
     <!--    Header-->
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
             <div class="navbar-form navbar-left">
                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
@@ -26,13 +26,15 @@
                 </a>
             </div>
             <div class="navbar-header">
-                <a class="text-uppercase navbar-brand site-logo" href="#">$appname</a>
+                <a class="text-uppercase navbar-brand site-logo" href="#">Maya Notes</a>
             </div>
             <form class="navbar-form navbar-left" role="search">
                 <div class="form-group">
-                    <input type="text" class="form-control input-large search-query" placeholder="Enter your keyword">
+                    <input type="text" style="width: 300px;" class="form-control input-large search-query" placeholder="Search your notes here">
                 </div>
-                <button type="submit" class="btn btn-primary">Search</button>
+                <button type="submit" class="btn btn-primary">
+                    <span class="glyphicon glyphicon-search"></span>
+                </button>
             </form>
             <ul class="text-uppercase nav navbar-nav navbar-right">
                 <!--                <li class="active"><a href="#">$home</a>-->
@@ -58,8 +60,13 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                </li>
                 <li>
-                    <a href="#">All Item</a>
+                    <a href="#">
+                        All Item
+                        <span class="badge">10</span>
+                    </a>
                 </li>
                 <li>
                     <a href="#">Plans</a>
@@ -82,6 +89,105 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div id="all" class="page-header">
+                    <h1>All Item</h1>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title pull-left">
+                                        Hello world
+                                    </div>
+                                    <div class="btn-group pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
+                                            <span class="glyphicon glyphicon-edit"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Hello world</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="tasks" class="page-header">
+                    <h1>Tasks</h1>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Hello world</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Hello world</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Hello world</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Hello world</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Hello world</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h3 class="panel-title">Hello world</h3>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
     </div>
     <footer>
         Copyright &copy; 2014 by <a href="https://github.com/Maya-Team" target="_blank">Maya Team</a>
@@ -90,6 +196,7 @@
         $("#menu-toggle").click(function(e) {
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
+            $("#menu-toggle").toggleClass("toggled");
         });
     </script>
     <!--
