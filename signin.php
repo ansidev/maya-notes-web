@@ -5,7 +5,7 @@ $result = mysqli_query($query, $con);
 ?>
 
 <?php
-include 'config/app-config.php';
+include 'config/site-config.php';
 include 'inc/function.php';
 $page_title = "Sign in";
 ?>

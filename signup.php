@@ -1,5 +1,5 @@
 <?php
-include 'config/app-config.php';
+include 'config/site-config.php';
 include 'inc/function.php';
 $page_title = "Register";
 ?>
@@ -127,3 +127,18 @@ $page_title = "Register";
 <script src="./bootstrap/js/register.js"></script>
 </body>
 </html>
+
+<?php
+//printf("<br>Email: ");
+//printf(validateEmail($_POST['email']));
+//printf("<br>Username: ");
+//printf(validateUsername($_POST['username']));
+////printf("<br>Password: ");
+////printf($_POST['password']);
+//printf("<br>Hashed Password: ");
+//printf(password_hash($_POST['password'],PASSWORD_DEFAULT));
+//printf("<br>Verify Password: ");
+//printf((password_verify($_POST['confirm-password'],password_hash($_POST['password'],PASSWORD_DEFAULT))) ? 1 : 0);
+//printf("<br>Checkbox Value: ");
+//printf($_POST['tos-checkbox']);
+//?>
