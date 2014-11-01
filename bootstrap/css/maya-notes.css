@@ -36,3 +36,7 @@ a.menu:after,
 #search-form {
     width: 250px;
 }
+.forgot-pass {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
