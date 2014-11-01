@@ -12,7 +12,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
                 <a class="text-uppercase navbar-brand" href="#">
-                    <span class="glyphicon glyphicon-home"></span> 
+                    <span class="glyphicon glyphicon-home"></span>
                     <?=$APP_NAME ?>
                 </a>
             </div>
@@ -33,9 +33,9 @@
                 <!--                </li>-->
                 <li>
                     <div class="navbar-btn">
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">Sign in
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup"><span class="glyphicon glyphicon-log-in"></span> Sign in
                         </button>
-                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">Sign up
+                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup"><span class="glyphicon glyphicon-user"></span> Sign up
                         </button>
                     </div>
                 </li>
@@ -72,20 +72,27 @@
                                 <span id="password-tooltip" style="display: none;">Password is not valid.</span>
                             </div>
                         </div>
-                        <span class="checkbox">
-                        <label>
-                            <input type="checkbox" name="remember-me" id="remember-me" value="forever" tabindex="4">
-                            Remember Me
-                        </label>
-                        <a href="user.php?action=forgotpass" title="Forgot your password?" class="pull-right"
-                           tabindex="6">
-                            Forgot your password?
-                        </a>
-                    </span>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <span class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember-me" id="remember-me" value="forever" tabindex="4">
+                                        Remember Me
+                                    </label>
+                                </span>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="user.php?action=forgotpass" title="Forgot your password?" class="pull-right forgot-pass" tabindex="6">
+                                Forgot your password?
+                                </a>
+                            </div>
+                        </div>
                         <button type="submit" name="si-btn-submit" class="btn btn-primary" tabindex="5">
                             <span class="glyphicon glyphicon-log-in"></span> Sign in
                         </button>
-                        <div class="col-md-5" id="validity_label"></div>
+                        <div class="row">
+                            <div class="col-md-12" id="validity_label"></div>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -109,7 +116,7 @@
                             <label class="control-label" for="email">Email address *</label>
 
                             <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                <span class="input-group-addon" data-toggle="popover" data-placement="left" title="Please enter a valid email address, it will be used to contact you."><i class="glyphicon glyphicon-envelope"></i></span>
                                 <input type="email" required class="form-control" id="email" name="email" placeholder="Enter your email address" tabindex="1">
                                 <span style="display: none;"></span>
                                 <span id="email-tooltip" style="display: none;"></span>
@@ -119,7 +126,7 @@
                             <label class="control-label" for="username">Username *</label>
 
                             <div class="input-group">
-                                <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                <span class="input-group-addon" data-toggle="tooltip" data-placement="left" title="Between 3 and 50 alphanumeric characters (from A to Z, with or without accents, from 0 to 9) and _, - or @."><i class="glyphicon glyphicon-user"></i></span>
                                 <input type="text" required class="form-control" id="username" name="username" placeholder="Enter your username" tabindex="2">
                                 <span style="display: none;"></span>
                                 <span id="text-tooltip" style="display: none;"></span>
@@ -152,9 +159,11 @@
                         </label>
                         </span>
                         <button type="submit" name="su-btn-submit" class="btn btn-primary" tabindex="5">
-                            <span class="glyphicon glyphicon-log-in"></span> Sign up
+                            <span class="glyphicon glyphicon-user"></span> Sign up
                         </button>
-                        <div class="col-md-5" id="validity_label"></div>
+                        <div class="row">
+                          <div class="col-md-5" id="validity_label"></div>
+                        </div>
                     </form>
                 </div>
             </div>

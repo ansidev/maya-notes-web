@@ -8,14 +8,14 @@
 
 #menu-toggle.toggled {
     color: #222222;
-    background-color: #ffffff;
+    background-color: #f8f8f8;
     border-color: #222222;
 }
 #menu-toggle,
 #menu-toggle:hover {
     color: #ffffff;
     background-color: #222222;
-    border-color: #040404;
+    border-color: #222222;
 }
 #wrapper {
     padding-left: 0;
