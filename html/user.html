@@ -44,8 +44,10 @@
                 </button>
             </form>
             <ul class="text-uppercase nav navbar-nav navbar-right">
-                <!--                <li class="active"><a href="#">$home</a>-->
+                <!--
+                <li class="active"><a href="#">$home</a>
                 </li>
+-->
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">
 				$user <span class="caret"></span>
@@ -99,12 +101,9 @@
             <div class="navbar-btn pull-left">
                 <button class="btn btn-default">New</button>
             </div>
-            <div class="navbar-btn btn-group pull-right">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
+            <div id="view-control" class="navbar-btn pull-right">
+                <button type="button" class="btn btn-primary listview">
                     <span class="glyphicon glyphicon-th"></span>
-                </button>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
-                    <span class="glyphicon glyphicon-th-list"></span>
                 </button>
             </div>
         </div>
@@ -115,186 +114,215 @@
                 <div id="all" class="page-header">
                     <h1>All Item</h1>
                     <div class="row">
-                        <div class="col-md-12">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="panel-title pull-left">
-                                        Hello world
+                        <div class="col-md-12 ">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <div class="panel-title pull-left" contenteditable="true">
+                                        Item 1
                                     </div>
-                                    <div class="btn-group pull-right">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
-                                            <span class="glyphicon glyphicon-edit"></span>
+                                    <div class="panel-button btn-group pull-right ">
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-up-popup ">
+                                            <span class="glyphicon glyphicon-edit "></span>
                                         </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
-                                            <span class="glyphicon glyphicon-remove"></span>
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-in-popup ">
+                                            <span class="glyphicon glyphicon-remove "></span>
                                         </button>
                                     </div>
-                                    <div class="clearfix"></div>
                                 </div>
-                                <div class="panel-body">
-                                    Hello world!
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="panel-title pull-left">
-                                        Hello world
-                                    </div>
-                                    <div class="btn-group pull-right">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
-                                            <span class="glyphicon glyphicon-edit"></span>
-                                        </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
-                                            <span class="glyphicon glyphicon-remove"></span>
-                                        </button>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="panel-body">
-                                    Hello world!
+                                <div class="panel-body" contenteditable="true">
+                                    Item 1
                                 </div>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="panel-title pull-left">
-                                        Hello world
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <div class="panel-title pull-left" contenteditable="true">
+                                        Item 2
                                     </div>
-                                    <div class="btn-group pull-right">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
-                                            <span class="glyphicon glyphicon-edit"></span>
+                                    <div class="panel-button btn-group pull-right ">
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-up-popup ">
+                                            <span class="glyphicon glyphicon-edit "></span>
                                         </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
-                                            <span class="glyphicon glyphicon-remove"></span>
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-in-popup ">
+                                            <span class="glyphicon glyphicon-remove "></span>
                                         </button>
                                     </div>
-                                    <div class="clearfix"></div>
+                                    <div class="clearfix "></div>
                                 </div>
-                                <div class="panel-body">
-                                    Hello world!
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="panel-title pull-left">
-                                        Hello world
-                                    </div>
-                                    <div class="btn-group pull-right">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
-                                            <span class="glyphicon glyphicon-edit"></span>
-                                        </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
-                                            <span class="glyphicon glyphicon-remove"></span>
-                                        </button>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="panel-body">
-                                    Hello world!
+                                <div class="panel-body" contenteditable="true">
+                                    Item 2
                                 </div>
                             </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <div class="panel-title pull-left">
-                                        Hello world
+                        </div>
+                        <div class="col-md-12 ">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <div class="panel-title pull-left ">
+                                        Item 3
                                     </div>
-                                    <div class="btn-group pull-right">
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
-                                            <span class="glyphicon glyphicon-edit"></span>
+                                    <div class="btn-group pull-right ">
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-up-popup ">
+                                            <span class="glyphicon glyphicon-edit "></span>
                                         </button>
-                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
-                                            <span class="glyphicon glyphicon-remove"></span>
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-in-popup ">
+                                            <span class="glyphicon glyphicon-remove "></span>
                                         </button>
                                     </div>
-                                    <div class="clearfix"></div>
+                                    <div class="clearfix "></div>
                                 </div>
-                                <div class="panel-body">
-                                    Hello world!
+                                <div class="panel-body ">
+                                    Item 3
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="tasks" class="page-header">
-                    <h1>Tasks</h1>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Hello world</h3>
+                    <div class="row ">
+                        <div class="col-md-12 ">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <div class="panel-title pull-left ">
+                                        Item 4
+                                    </div>
+                                    <div class="btn-group pull-right ">
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-up-popup ">
+                                            <span class="glyphicon glyphicon-edit "></span>
+                                        </button>
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-in-popup ">
+                                            <span class="glyphicon glyphicon-remove "></span>
+                                        </button>
+                                    </div>
+                                    <div class="clearfix "></div>
                                 </div>
-                                <div class="panel-body">
-                                    Hello world!
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Hello world</h3>
-                                </div>
-                                <div class="panel-body">
-                                    Hello world!
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Hello world</h3>
-                                </div>
-                                <div class="panel-body">
-                                    Hello world!
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Hello world</h3>
-                                </div>
-                                <div class="panel-body">
-                                    Hello world!
+                                <div class="panel-body ">
+                                    Item 4
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-4">
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Hello world</h3>
+                        <div class="col-md-12 ">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <div class="panel-title pull-left ">
+                                        Item 5
+                                    </div>
+                                    <div class="btn-group pull-right ">
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-up-popup ">
+                                            <span class="glyphicon glyphicon-edit "></span>
+                                        </button>
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-in-popup ">
+                                            <span class="glyphicon glyphicon-remove "></span>
+                                        </button>
+                                    </div>
+                                    <div class="clearfix "></div>
                                 </div>
-                                <div class="panel-body">
-                                    Hello world!
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div class="panel-heading">
-                                    <h3 class="panel-title">Hello world</h3>
-                                </div>
-                                <div class="panel-body">
-                                    Hello world!
+                                <div class="panel-body ">
+                                    Item 5
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <div id="tasks " class="page-header ">
+                <h1>Tasks</h1>
+                <div class="row ">
+                    <div class="col-md-4 ">
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h3 class="panel-title ">Hello world</h3>
+                            </div>
+                            <div class="panel-body ">
+                                Item 6
+                            </div>
+                        </div>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h3 class="panel-title ">Hello world</h3>
+                            </div>
+                            <div class="panel-body ">
+                                Hello world!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h3 class="panel-title ">Hello world</h3>
+                            </div>
+                            <div class="panel-body ">
+                                Hello world!
+                            </div>
+                        </div>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h3 class="panel-title ">Hello world</h3>
+                            </div>
+                            <div class="panel-body ">
+                                Hello world!
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 ">
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h3 class="panel-title ">Hello world</h3>
+                            </div>
+                            <div class="panel-body ">
+                                Hello world!
+                            </div>
+                        </div>
+                        <div class="panel panel-default ">
+                            <div class="panel-heading ">
+                                <h3 class="panel-title ">Hello world</h3>
+                            </div>
+                            <div class="panel-body ">
+                                Hello world!
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- /#page-content-wrapper -->
     </div>
-    <footer class="navbar-fixed-bottom">
-        Copyright &copy; 2014 by <a href="https://github.com/Maya-Team" target="_blank">Maya Team</a>
+    <!-- /#page-content-wrapper -->
+    <footer class="navbar-fixed-bottom ">
+        Copyright &copy; 2014 by <a href="https://github.com/Maya-Team " target="_blank">Maya Team</a>
     </footer>
-    <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $("#wrapper").toggleClass("toggled");
-            $("#menu-toggle").toggleClass("toggled");
-            $("#toolbar").toggleClass("toggled");
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var elem = $('.row > div');
+            $('#view-control > button').on('click', function(e) {
+                if ($(this).hasClass('gridview')) {
+                    $(this).removeClass('gridview').addClass('listview');
+                    $(this).children('span').removeClass('glyphicon-th-list').addClass('glyphicon-th');
+                    elem.fadeOut(100, function() {
+                        elem.removeClass('col-md-4').addClass('col-md-12');
+                        elem.fadeIn(100);
+                    });
+                } else if ($(this).hasClass('listview')) {
+                    $(this).removeClass('listview').addClass('gridview');
+                    $(this).children('span').removeClass('glyphicon-th').addClass('glyphicon-th-list');
+                    elem.fadeOut(100, function() {
+                        elem.removeClass('col-md-12').addClass('col-md-4');
+                        elem.fadeIn(100);
+                    });
+                }
+            });
+
+            $("#menu-toggle").click(function(e) {
+                e.preventDefault();
+                $("#wrapper").toggleClass("toggled ");
+                $("#menu-toggle ").toggleClass("toggled ");
+                $("#toolbar ").toggleClass("toggled ");
+            });
+
+            //            $('.panel-title').click(function(e) {
+            //                $(this).css({
+            //                    'max-height': ''
+            //                });
+            //            });
         });
     </script>
-    <!--
-<script type="text/javascript">
-    $(document).ready(function() {
-        $('.dropdown-toggle').dropdown();
-    });
-</script>
--->
 </body>
 
 </html>

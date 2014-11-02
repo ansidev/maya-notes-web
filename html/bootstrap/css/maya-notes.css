@@ -53,15 +53,23 @@ a.menu:after,
 .panel-heading {
     overflow: hidden;
 }
-.panel-title {
-    padding-top: 7px;
-}
-/*
-.btn-group {
-    position: relative;
-    top: -5px;
-}*/
-
 .total {
     display: inline;
+}
+.note-title {
+    height: 100%;
+}
+.panel-body {
+    min-height: 45px;
+}
+.panel-body:active {
+    border: 0;
+}
+.panel-title {
+    padding: 6px 0;
+    width: calc(100% - 95px);
+    /*
+    max-height: 34px;
+    overflow: hidden;
+*/
 }
