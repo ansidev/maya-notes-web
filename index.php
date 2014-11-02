@@ -116,7 +116,7 @@
                             <label class="control-label" for="email">Email address *</label>
 
                             <div class="input-group">
-                                <span class="input-group-addon" data-toggle="popover" data-placement="left" title="Please enter a valid email address, it will be used to contact you."><i class="glyphicon glyphicon-envelope"></i></span>
+                                <span class="input-group-addon" data-toggle="tooltip" data-placement="left" title="Please enter a valid email address, it will be used to contact you."><i class="glyphicon glyphicon-envelope"></i></span>
                                 <input type="email" required class="form-control" id="email" name="email" placeholder="Enter your email address" tabindex="1">
                                 <span style="display: none;"></span>
                                 <span id="email-tooltip" style="display: none;"></span>

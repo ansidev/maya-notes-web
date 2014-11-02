@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="utf-8" />
+    <title>Maya Notes Web Apps</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.css" media="all">
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap-flat.css" media="all">
@@ -13,14 +14,20 @@
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/simple-sidebar.css" media="all">
     <script src="./bootstrap/js/jquery-1.11.1.js"></script>
     <script src="./bootstrap/js/bootstrap.js"></script>
-    <title>Maya Notes Web Apps</title>
+    <!--
+    <script type="text/javascript">
+        $(function() {
+            $("[data-toggle='tooltip']").tooltip();
+        });
+    </script>
+-->
 </head>
 
 <body>
     <!--    Header-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-fluid">
-            <div class="navbar-form navbar-left">
+            <div class="navbar-btn navbar-left">
                 <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">
                     <span class="glyphicon glyphicon-list"></span>
                 </a>
@@ -60,8 +67,6 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li class="sidebar-brand">
-                </li>
                 <li>
                     <a href="#">
                         All Item
@@ -89,6 +94,21 @@
             </ul>
         </div>
         <!-- /#sidebar-wrapper -->
+        <!--        Toolbar-->
+        <div id="toolbar" class="navbar navbar-default">
+            <div class="navbar-btn pull-left">
+                <button class="btn btn-default">New</button>
+            </div>
+            <div class="navbar-btn btn-group pull-right">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
+                    <span class="glyphicon glyphicon-th"></span>
+                </button>
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
+                    <span class="glyphicon glyphicon-th-list"></span>
+                </button>
+            </div>
+        </div>
+        <!--        /#toolbar-->
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
@@ -117,7 +137,75 @@
                             </div>
                             <div class="panel panel-default">
                                 <div class="panel-heading">
-                                    <h3 class="panel-title">Hello world</h3>
+                                    <div class="panel-title pull-left">
+                                        Hello world
+                                    </div>
+                                    <div class="btn-group pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
+                                            <span class="glyphicon glyphicon-edit"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title pull-left">
+                                        Hello world
+                                    </div>
+                                    <div class="btn-group pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
+                                            <span class="glyphicon glyphicon-edit"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title pull-left">
+                                        Hello world
+                                    </div>
+                                    <div class="btn-group pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
+                                            <span class="glyphicon glyphicon-edit"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </button>
+                                    </div>
+                                    <div class="clearfix"></div>
+                                </div>
+                                <div class="panel-body">
+                                    Hello world!
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <div class="panel-title pull-left">
+                                        Hello world
+                                    </div>
+                                    <div class="btn-group pull-right">
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-up-popup">
+                                            <span class="glyphicon glyphicon-edit"></span>
+                                        </button>
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sign-in-popup">
+                                            <span class="glyphicon glyphicon-remove"></span>
+                                        </button>
+                                    </div>
+                                    <div class="clearfix"></div>
                                 </div>
                                 <div class="panel-body">
                                     Hello world!
@@ -189,7 +277,7 @@
         </div>
         <!-- /#page-content-wrapper -->
     </div>
-    <footer>
+    <footer class="navbar-fixed-bottom">
         Copyright &copy; 2014 by <a href="https://github.com/Maya-Team" target="_blank">Maya Team</a>
     </footer>
     <script>
@@ -197,6 +285,7 @@
             e.preventDefault();
             $("#wrapper").toggleClass("toggled");
             $("#menu-toggle").toggleClass("toggled");
+            $("#toolbar").toggleClass("toggled");
         });
     </script>
     <!--

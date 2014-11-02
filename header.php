@@ -16,12 +16,7 @@
     <script src="./bootstrap/js/jquery-1.11.1.js"></script>
     <script src="./bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript">
-      $(document).ready(function() {
-            $(".input-group-addon").tooltip({
-              placement: 'left'
-            });
-            $(".input-group-addon").popover({
-              placement: 'left'
-            });
-
+        $(function () {
+          $("[data-toggle='tooltip']").tooltip();
+        });
     </script>
