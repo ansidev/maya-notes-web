@@ -1,4 +1,4 @@
-maya-note-web
+maya-notes-web
 =============
 
-Maya Notes for Web
+Maya Notes Web App
