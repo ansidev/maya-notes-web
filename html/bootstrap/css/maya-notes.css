@@ -73,3 +73,22 @@ a.menu:after,
     overflow: hidden;
 */
 }
+.active {
+    color: #000000;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+    border-radius: 17px;
+    border-color: red;
+}
+.stripe {
+    border-left: 5px solid #C9302C;
+}
+.stripe:hover {
+    color: #fff;
+}
+.stripe:active {
+    border-left: 5px solid #fff;
+    background: #C9302C;
+}

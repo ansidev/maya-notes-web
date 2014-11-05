@@ -12,8 +12,6 @@
     <!-- <link rel="stylesheet" type="text/css" href="../bootstrap/css/reset.css" media="all"> -->
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/normalize.css" media="all">
     <link rel="stylesheet" type="text/css" href="./bootstrap/css/simple-sidebar.css" media="all">
-    <script src="./bootstrap/js/jquery-1.11.1.js"></script>
-    <script src="./bootstrap/js/bootstrap.js"></script>
     <!--
     <script type="text/javascript">
         $(function() {
@@ -55,7 +53,6 @@
                     <ul class="dropdown-menu" role="menu">
                         <li><a href="#">Profiles</a>
                         </li>
-                        <li class="divider"></li>
                         <li><a href="#">Log out</a>
                         </li>
                     </ul>
@@ -69,29 +66,29 @@
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
-                <li>
+                <li class="stripe">
                     <a href="#">
-                        All Item
+                        All Notebooks
                         <span class="badge total">10</span>
                     </a>
                 </li>
                 <li>
-                    <a href="#">Plans</a>
+                    <a href="#">Notes</a>
                 </li>
                 <li>
-                    <a href="#">Tasks</a>
+                    <a href="#">Reminder</a>
                 </li>
                 <li>
                     <a href="#">Events</a>
                 </li>
                 <li>
-                    <a href="#">Reminders</a>
+                    <a href="#">To do list</a>
                 </li>
                 <li>
-                    <a href="#">Appointments</a>
+                    <a href="#">Trash</a>
                 </li>
                 <li>
-                    <a href="#">Notes</a>
+                    <a href="#">Shared</a>
                 </li>
             </ul>
         </div>
@@ -99,7 +96,26 @@
         <!--        Toolbar-->
         <div id="toolbar" class="navbar navbar-default">
             <div class="navbar-btn pull-left">
-                <button class="btn btn-default">New</button>
+                <!-- Split button -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+                        New <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Notebook</a>
+                        </li>
+                        <li class="divider"></li>
+                        <li><a href="#">Note</a>
+                        </li>
+                        <li><a href="#">Reminder</a>
+                        </li>
+                        <li><a href="#">Event</a>
+                        </li>
+                        <li><a href="#">To do list</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--                End Split button-->
             </div>
             <div id="view-control" class="navbar-btn pull-right">
                 <button type="button" class="btn btn-primary listview">
@@ -112,16 +128,16 @@
         <div id="page-content-wrapper">
             <div class="container-fluid">
                 <div id="all" class="page-header">
-                    <h1>All Item</h1>
+                    <h1>All Notebooks [$NOTEBOOK_TITLE]</h1>
                     <div class="row">
                         <div class="col-md-12 ">
-                            <div class="panel panel-default ">
+                            <div class="panel panel-default">
                                 <div class="panel-heading ">
                                     <div class="panel-title pull-left" contenteditable="true">
                                         Item 1
                                     </div>
                                     <div class="panel-button btn-group pull-right ">
-                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-up-popup ">
+                                        <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-up-popup">
                                             <span class="glyphicon glyphicon-edit "></span>
                                         </button>
                                         <button type="button " class="btn btn-primary " data-toggle="modal " data-target="#sign-in-popup ">
@@ -172,12 +188,10 @@
                                     <div class="clearfix "></div>
                                 </div>
                                 <div class="panel-body" contenteditable="true">
-                                    Iis ipsum litteris eiusmod aut non e esse quamquam si admodum ut velit o iis enim efflorescere, nostrud ea quibusdam hic nam minim tempor cernantur, ne multos concursionibus ita ad commodo non ingeniis. Ad vidisse ab fabulas. Aliquip quis est singulis consectetur. Ad quem sint enim laborum, aute ab probant. Dolore arbitror exercitation. Duis hic ea lorem offendit. Lorem eu quo dolore vidisse non quid laborum o lorem multos. Varias probant iis quae quorum.
+                                    Iis ipsum litteris eiusmod aut non e esse quamquam si admodum ut velit o iis enim efflorescere, nostrud ea quibusdam hic nam minim tempor cernantur, ne multos concursionibus ita ad commodo non ingeniis. Ad vidisse ab fabulas. Aliquip quis est singulis consectetur. Ad quem sint enim laborum, aute ab probant. Dolore arbitror exercitation. Duis hic ea lorem offendit. Lorem eu quo dolore vidisse non quid laborum o lorem multos. Varias probant iis quae quorum. Ea velit varias in senserit. Ne cillum ex minim, multos possumus quo consequat ex consequat sint appellat proident, ut irure offendit. Est singulis in excepteur ita se quem possumus eruditionem do illum pariatur qui legam nisi qui proident labore ipsum consequat aute. Anim ea non eram occaecat. Ut ea cillum quem tamen e ad elit ubi aute, pariatur nisi ea cupidatat domesticarum est sed de quid quibusdam. Multos quibusdam est philosophari e aut labore nostrud, occaecat multos senserit expetendis quo a irure ne illum a dolor tempor hic distinguantur, varias incurreret voluptatibus se doctrina elit quo aliquip sempiternum et ingeniis malis quem arbitror velit. E offendit coniunctione ab quis est officia.
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row ">
                         <div class="col-md-12 ">
                             <div class="panel panel-default ">
                                 <div class="panel-heading ">
@@ -222,109 +236,120 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div id="tasks " class="page-header ">
-                <h1>Tasks</h1>
-                <div class="row ">
-                    <div class="col-md-4 ">
-                        <div class="panel panel-default ">
-                            <div class="panel-heading ">
-                                <h3 class="panel-title ">Hello world</h3>
+                <div id="tasks " class="page-header ">
+                    <h1>Tasks</h1>
+                    <div class="row ">
+                        <div class="col-md-4 ">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <h3 class="panel-title ">Hello world</h3>
+                                </div>
+                                <div class="panel-body ">
+                                    Item 6
+                                </div>
                             </div>
-                            <div class="panel-body ">
-                                Item 6
-                            </div>
-                        </div>
-                        <div class="panel panel-default ">
-                            <div class="panel-heading ">
-                                <h3 class="panel-title ">Hello world</h3>
-                            </div>
-                            <div class="panel-body ">
-                                Hello world!
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4 ">
-                        <div class="panel panel-default ">
-                            <div class="panel-heading ">
-                                <h3 class="panel-title ">Hello world</h3>
-                            </div>
-                            <div class="panel-body ">
-                                Hello world!
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <h3 class="panel-title ">Hello world</h3>
+                                </div>
+                                <div class="panel-body ">
+                                    Hello world!
+                                </div>
                             </div>
                         </div>
-                        <div class="panel panel-default ">
-                            <div class="panel-heading ">
-                                <h3 class="panel-title ">Hello world</h3>
+                        <div class="col-md-4 ">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <h3 class="panel-title ">Hello world</h3>
+                                </div>
+                                <div class="panel-body ">
+                                    Hello world!
+                                </div>
                             </div>
-                            <div class="panel-body ">
-                                Hello world!
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <h3 class="panel-title ">Hello world</h3>
+                                </div>
+                                <div class="panel-body ">
+                                    Hello world!
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-4 ">
-                        <div class="panel panel-default ">
-                            <div class="panel-heading ">
-                                <h3 class="panel-title ">Hello world</h3>
+                        <div class="col-md-4 ">
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <h3 class="panel-title ">Hello world</h3>
+                                </div>
+                                <div class="panel-body ">
+                                    Hello world!
+                                </div>
                             </div>
-                            <div class="panel-body ">
-                                Hello world!
-                            </div>
-                        </div>
-                        <div class="panel panel-default ">
-                            <div class="panel-heading ">
-                                <h3 class="panel-title ">Hello world</h3>
-                            </div>
-                            <div class="panel-body ">
-                                Hello world!
+                            <div class="panel panel-default ">
+                                <div class="panel-heading ">
+                                    <h3 class="panel-title ">Hello world</h3>
+                                </div>
+                                <div class="panel-body ">
+                                    Hello world!
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- /#page-content-wrapper -->
-    <footer class="navbar-fixed-bottom ">
-        Copyright &copy; 2014 by <a href="https://github.com/Maya-Team " target="_blank">Maya Team</a>
-    </footer>
-    <script type="text/javascript">
-        $(document).ready(function() {
-            var elem = $('.row > div');
-            $('#view-control > button').on('click', function(e) {
-                if ($(this).hasClass('gridview')) {
-                    $(this).removeClass('gridview').addClass('listview');
-                    $(this).children('span').removeClass('glyphicon-th-list').addClass('glyphicon-th');
-                    //                    elem = $('div').hasClass('col-md-4');
-                    elem.fadeOut(100, function() {
-                        elem.removeClass('col-md-4').addClass('col-md-12');
-                        elem.fadeIn(100);
-                    });
-                } else if ($(this).hasClass('listview')) {
-                    $(this).removeClass('listview').addClass('gridview');
-                    $(this).children('span').removeClass('glyphicon-th').addClass('glyphicon-th-list');
-                    //                    elem = $('div').hasClass('col-md-12');
-                    elem.fadeOut(100, function() {
-                        elem.removeClass('col-md-12').addClass('col-md-4');
-                        elem.fadeIn(100);
-                    });
-                }
-            });
+        <!-- /#page-content-wrapper -->
+        <footer class="navbar-fixed-bottom ">
+            Copyright &copy; 2014 by <a href="https://github.com/Maya-Team " target="_blank">Maya Team</a>
+        </footer>
+        <script src="./bootstrap/js/jquery-1.11.1.js"></script>
+        <script src="./bootstrap/js/bootstrap.js"></script>
+        <script src="./bootstrap/js/html.sortable.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                //Switch between ListView and GridView
+                var elem = $('.row > div');
+                $('#view-control > button').on('click', function(e) {
+                    if ($(this).hasClass('gridview')) {
+                        $(this).removeClass('gridview').addClass('listview');
+                        $(this).children('span').removeClass('glyphicon-th-list').addClass('glyphicon-th');
+                        //                    elem = $('div').hasClass('col-md-4');
+                        elem.fadeOut(100, function() {
+                            elem.removeClass('col-md-4').addClass('col-md-12');
+                            elem.fadeIn(100);
+                        });
+                    } else if ($(this).hasClass('listview')) {
+                        $(this).removeClass('listview').addClass('gridview');
+                        $(this).children('span').removeClass('glyphicon-th').addClass('glyphicon-th-list');
+                        //                    elem = $('div').hasClass('col-md-12');
+                        elem.fadeOut(100, function() {
+                            elem.removeClass('col-md-12').addClass('col-md-4');
+                            elem.fadeIn(100);
+                        });
+                    }
+                });
+                //End switch between ListView and GridView
+                //Toggle Sidebar
+                $("#menu-toggle").click(function(e) {
+                    e.preventDefault();
+                    $("#wrapper").toggleClass("toggled ");
+                    $("#menu-toggle ").toggleClass("toggled ");
+                    $("#toolbar ").toggleClass("toggled ");
+                });
+                //End toggle sidebar
 
-            $("#menu-toggle").click(function(e) {
-                e.preventDefault();
-                $("#wrapper").toggleClass("toggled ");
-                $("#menu-toggle ").toggleClass("toggled ");
-                $("#toolbar ").toggleClass("toggled ");
+                $(function() {
+                    $('.sortable').sortable();
+                    //                $('.handles').sortable({
+                    //                    handle: 'span'
+                    //                });
+                });
+                //            $('.panel-title').click(function(e) {
+                //                $(this).css({
+                //                    'max-height': ''
+                //                });
+                //            });
             });
-
-            //            $('.panel-title').click(function(e) {
-            //                $(this).css({
-            //                    'max-height': ''
-            //                });
-            //            });
-        });
-    </script>
+        </script>
 </body>
 
 </html>
